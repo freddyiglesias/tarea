@@ -58,7 +58,7 @@ pipeline {
         		
         		script{
         		   env.DOCKER = tool "Docker"
-        		   env.DOCKER_EXEC = "${DOCKER}/bin/docker
+        		   env.DOCKER_EXEC = "${DOCKER}/bin/docker"
                     env.TARGET = 'http://zero.webappsecurity.com'
         	
         		    sh '${DOCKER_EXEC} rm -f zap2'
